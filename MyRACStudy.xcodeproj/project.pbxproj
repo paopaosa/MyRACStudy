@@ -24,6 +24,8 @@
 		CEFA54891C63932100B8FDB6 /* XCGLogger.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = CEFA54881C63932100B8FDB6 /* XCGLogger.framework.dSYM */; };
 		CEFA54941C644ED800B8FDB6 /* MyCommonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFA54931C644ED800B8FDB6 /* MyCommonExtension.swift */; };
 		CEFA54961C6460E100B8FDB6 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = CEFA54951C6460E100B8FDB6 /* README.md */; };
+		CEFA54991C6462CE00B8FDB6 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFA54981C6462CE00B8FDB6 /* BaseViewModel.swift */; };
+		CEFA549B1C64633900B8FDB6 /* MRUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFA549A1C64633900B8FDB6 /* MRUserViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +94,8 @@
 		CEFA54881C63932100B8FDB6 /* XCGLogger.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = XCGLogger.framework.dSYM; path = Carthage/Build/Mac/XCGLogger.framework.dSYM; sourceTree = "<group>"; };
 		CEFA54931C644ED800B8FDB6 /* MyCommonExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCommonExtension.swift; sourceTree = "<group>"; };
 		CEFA54951C6460E100B8FDB6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CEFA54981C6462CE00B8FDB6 /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		CEFA549A1C64633900B8FDB6 /* MRUserViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MRUserViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				CEFA54921C644EB300B8FDB6 /* extension */,
+				CEFA54971C6462A400B8FDB6 /* ViewModel */,
 				CEB8F1341C63623D001FBC28 /* AppDelegate.swift */,
 				CEB8F1361C63623D001FBC28 /* ViewController.swift */,
 				CEB8F1381C63623D001FBC28 /* Assets.xcassets */,
@@ -194,6 +199,15 @@
 				CEFA54931C644ED800B8FDB6 /* MyCommonExtension.swift */,
 			);
 			path = extension;
+			sourceTree = "<group>";
+		};
+		CEFA54971C6462A400B8FDB6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CEFA54981C6462CE00B8FDB6 /* BaseViewModel.swift */,
+				CEFA549A1C64633900B8FDB6 /* MRUserViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,6 +343,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEFA54941C644ED800B8FDB6 /* MyCommonExtension.swift in Sources */,
+				CEFA54991C6462CE00B8FDB6 /* BaseViewModel.swift in Sources */,
+				CEFA549B1C64633900B8FDB6 /* MRUserViewModel.swift in Sources */,
 				CEB8F1371C63623D001FBC28 /* ViewController.swift in Sources */,
 				CEFA54961C6460E100B8FDB6 /* README.md in Sources */,
 				CEB8F1351C63623D001FBC28 /* AppDelegate.swift in Sources */,

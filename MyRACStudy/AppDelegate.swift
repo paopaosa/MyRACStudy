@@ -42,6 +42,10 @@ let log: XCGLogger = {
     return log
 }()
 
+let userViewModel:MRUserViewModel = {
+    let userViewModel = MRUserViewModel()
+    return userViewModel
+}()
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
