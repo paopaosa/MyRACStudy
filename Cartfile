@@ -1,0 +1,2 @@
+github "ReactiveCocoa/ReactiveCocoa" ~> 4.0
+github "DaveWoodCom/XCGLogger" ~> 3.2
