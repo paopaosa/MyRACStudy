@@ -9,11 +9,13 @@
 import Cocoa
 
 class MRUserViewModel: BaseViewModel {
+    var tempUsername:String?
+    
     override init() {
         
     }
     
     override var debugDescription: String{
-        return String(format: "<Debug: {\n  className: %s\n>", className)
+        return String(format: "<Debug: {\n  className: %s\n}>", className)
     }
 }
