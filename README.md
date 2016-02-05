@@ -1,4 +1,4 @@
-#Destionation
+#Desitination
 
 Study Programming Mac OS X application with ReactiveCocoa 4.0.
 
