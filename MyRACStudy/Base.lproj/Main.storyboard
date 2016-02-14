@@ -716,6 +716,13 @@
                                     <font key="font" metaFont="cellTitle"/>
                                 </buttonCell>
                             </button>
+                            <button horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="d1k-tO-siH">
+                                <rect key="frame" x="433" y="195" width="25" height="25"/>
+                                <buttonCell key="cell" type="help" bezelStyle="helpButton" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="FR2-fI-FM3">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="tVB-k1-C8a" firstAttribute="trailing" secondItem="4ZK-wR-2uw" secondAttribute="trailing" id="8nC-1W-p88"/>
@@ -723,14 +730,17 @@
                             <constraint firstItem="gag-YC-4en" firstAttribute="top" secondItem="4ZK-wR-2uw" secondAttribute="bottom" constant="8" symbolic="YES" id="Eon-6w-48x"/>
                             <constraint firstItem="s0O-Uu-Vin" firstAttribute="top" secondItem="4ZK-wR-2uw" secondAttribute="bottom" constant="91" id="Iy7-eb-gqm"/>
                             <constraint firstItem="tVB-k1-C8a" firstAttribute="leading" secondItem="4ZK-wR-2uw" secondAttribute="leading" id="Nqp-xJ-hrz"/>
+                            <constraint firstItem="d1k-tO-siH" firstAttribute="leading" secondItem="tVB-k1-C8a" secondAttribute="trailing" constant="8" symbolic="YES" id="QLR-oy-pgz"/>
                             <constraint firstItem="4ZK-wR-2uw" firstAttribute="centerX" secondItem="s0O-Uu-Vin" secondAttribute="centerX" id="Ry9-TE-XGv"/>
                             <constraint firstItem="4ZK-wR-2uw" firstAttribute="trailing" secondItem="gag-YC-4en" secondAttribute="trailing" id="SrS-hg-iPL"/>
                             <constraint firstItem="tVB-k1-C8a" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="54" id="Tvk-yo-FB9"/>
                             <constraint firstItem="4ZK-wR-2uw" firstAttribute="top" secondItem="tVB-k1-C8a" secondAttribute="bottom" constant="10" symbolic="YES" id="ak3-ql-Eln"/>
+                            <constraint firstItem="d1k-tO-siH" firstAttribute="bottom" secondItem="tVB-k1-C8a" secondAttribute="bottom" id="rMm-2f-VJk"/>
                             <constraint firstItem="s0O-Uu-Vin" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="xQV-Ui-tGH"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="infoBtn" destination="d1k-tO-siH" id="Zhb-Gn-0ne"/>
                         <outlet property="password" destination="4ZK-wR-2uw" id="xco-ub-8zz"/>
                         <outlet property="username" destination="tVB-k1-C8a" id="bMU-oJ-xQI"/>
                     </connections>

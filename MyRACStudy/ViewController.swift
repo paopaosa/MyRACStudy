@@ -10,14 +10,50 @@ import Cocoa
 import Result
 import ReactiveCocoa
 
+class LoginViewModel {
+    let infoAction = RACCommand { (object) -> RACSignal! in
+        return RACSignal.createSignal({ (observer) -> RACDisposable! in
+            log.debug("click info button")
+            observer.sendNext("ok")
+            observer.sendCompleted()
+            return nil
+        })
+        }.toAction()
+    
+    private var startAction: Action<String, Void, NoError> = {
+        return Action { _ in
+            log.debug("clicked")
+            return SignalProducer<Void, NoError>.empty
+        }
+    }()
+    
+    private var cocoaAction:CocoaAction?
+    
+    init () {
+        self.cocoaAction = CocoaAction(self.infoAction, input:"")
+    }
+    
+    func bindToNSButton(btn: NSButton!) {
+        btn.target = self.cocoaAction
+        btn.action = CocoaAction.selector
+    }
+}
+
 class ViewController: NSViewController {
     @IBOutlet weak var username: NSTextField!
     @IBOutlet weak var password: NSSecureTextField!
+    @IBOutlet weak var infoBtn: NSButton!
+    
+    let viewModel = LoginViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+
+        self.viewModel.bindToNSButton(self.infoBtn)
+//        self.infoBtn.target = self.viewModel.cocoaAction
+//        self.infoBtn.action = CocoaAction.selector
         
 //        self.username.rac_textSignal().subscribeNext { text in
 //            self.view.window?.title = "当前登录用户:" + (text as! String)
@@ -61,6 +97,7 @@ class ViewController: NSViewController {
         observer.sendNext(1)
         observer.sendNext(0)
         
+        
         let nameSignalProducer = self.username.rac_textSignal().toSignalProducer()
         nameSignalProducer.start { event in
             switch event {
@@ -69,13 +106,13 @@ class ViewController: NSViewController {
                     log.debug("Next event: \(text)")
                 }
             case let .Failed(error):
-                print("Failed event: \(error)")
+                log.debug("Failed event: \(error)")
                 
             case .Completed:
-                print("Completed event")
+                log.verbose("Completed event")
                 
             case .Interrupted:
-                print("Interrupted event")
+                log.verbose("Interrupted event")
             }
         }
         
