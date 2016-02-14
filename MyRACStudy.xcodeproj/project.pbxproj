@@ -23,7 +23,6 @@
 		CEFA54871C63930600B8FDB6 /* XCGLogger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CEFA54851C63930600B8FDB6 /* XCGLogger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CEFA54891C63932100B8FDB6 /* XCGLogger.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = CEFA54881C63932100B8FDB6 /* XCGLogger.framework.dSYM */; };
 		CEFA54941C644ED800B8FDB6 /* MyCommonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFA54931C644ED800B8FDB6 /* MyCommonExtension.swift */; };
-		CEFA54961C6460E100B8FDB6 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = CEFA54951C6460E100B8FDB6 /* README.md */; };
 		CEFA54991C6462CE00B8FDB6 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFA54981C6462CE00B8FDB6 /* BaseViewModel.swift */; };
 		CEFA549B1C64633900B8FDB6 /* MRUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFA549A1C64633900B8FDB6 /* MRUserViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -346,7 +345,6 @@
 				CEFA54991C6462CE00B8FDB6 /* BaseViewModel.swift in Sources */,
 				CEFA549B1C64633900B8FDB6 /* MRUserViewModel.swift in Sources */,
 				CEB8F1371C63623D001FBC28 /* ViewController.swift in Sources */,
-				CEFA54961C6460E100B8FDB6 /* README.md in Sources */,
 				CEB8F1351C63623D001FBC28 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

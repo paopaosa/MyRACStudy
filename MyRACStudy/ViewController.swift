@@ -126,6 +126,11 @@ class ViewController: NSViewController {
             self.createSignal()
         }
         
+        self.createSignal().observeNext { (next) -> () in
+            log.debug(closure: { () -> String? in
+                return "hello"
+            })
+        }
     }
     
     func createSignal() -> Signal<String, NoError> {
