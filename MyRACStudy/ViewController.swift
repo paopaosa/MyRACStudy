@@ -33,7 +33,7 @@ class LoginViewModel {
         self.cocoaAction = CocoaAction(self.infoAction, input:"")
     }
     
-    func bindToNSButton(btn: NSButton!) {
+    func bindToInfoButton(btn: NSButton!) {
         btn.target = self.cocoaAction
         btn.action = CocoaAction.selector
     }
@@ -51,9 +51,7 @@ class ViewController: NSViewController {
 
         // Do any additional setup after loading the view.
 
-        self.viewModel.bindToNSButton(self.infoBtn)
-//        self.infoBtn.target = self.viewModel.cocoaAction
-//        self.infoBtn.action = CocoaAction.selector
+        self.viewModel.bindToInfoButton(self.infoBtn)
         
 //        self.username.rac_textSignal().subscribeNext { text in
 //            self.view.window?.title = "当前登录用户:" + (text as! String)
