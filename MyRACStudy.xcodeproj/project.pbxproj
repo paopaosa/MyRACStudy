@@ -90,6 +90,7 @@
 		CEFA54851C63930600B8FDB6 /* XCGLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCGLogger.framework; path = Carthage/Build/Mac/XCGLogger.framework; sourceTree = "<group>"; };
 		CEFA54881C63932100B8FDB6 /* XCGLogger.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = XCGLogger.framework.dSYM; path = Carthage/Build/Mac/XCGLogger.framework.dSYM; sourceTree = "<group>"; };
 		CEFA54931C644ED800B8FDB6 /* MyCommonExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCommonExtension.swift; sourceTree = "<group>"; };
+		F5B593991CA2BC6800BF63F7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +124,7 @@
 		CEB8F1281C63623D001FBC28 = {
 			isa = PBXGroup;
 			children = (
+				F5B593991CA2BC6800BF63F7 /* README.md */,
 				CEFA547D1C63664300B8FDB6 /* Framework */,
 				CEB8F1331C63623D001FBC28 /* MyRACStudy */,
 				CEB8F1451C63623E001FBC28 /* MyRACStudyTests */,
