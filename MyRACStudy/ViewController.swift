@@ -26,7 +26,7 @@ class ViewController: NSViewController {
             log.debug("we got my notification:\(notification.debugDescription!)")
         }
         
-        let signalA = self.rac_signalForSelector("viewWillAppear")
+        let signalA = self.rac_signalForSelector(#selector(NSViewController.viewWillAppear))
         signalA.subscribeNext { AnyObjectA in
             log.info("your view will Appear:\(self.view.window!.title)")
         }
