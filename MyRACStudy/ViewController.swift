@@ -27,14 +27,14 @@ class LoginViewModel {
         }
     }()
     
-    private var cocoaAction:CocoaAction?
+    private var infoCocoaAction:CocoaAction?
     
     init () {
-        self.cocoaAction = CocoaAction(self.infoAction, input:"")
+        self.infoCocoaAction = CocoaAction(self.startAction, input:"")
     }
     
     func bindToInfoButton(btn: NSButton!) {
-        btn.target = self.cocoaAction
+        btn.target = self.infoCocoaAction
         btn.action = CocoaAction.selector
     }
 }
@@ -61,7 +61,7 @@ class ViewController: NSViewController {
         
 //        var nameSignal:RACSignal
 //        userViewModel.tempUsername <~ nameSignal
-        self.rac_signalForSelector("viewWillAppear").subscribeNext {[weak self](object) -> Void in
+        self.rac_signalForSelector(#selector(NSViewController.viewWillAppear)).subscribeNext {[weak self](object) -> Void in
             self!.view.window?.title = "登录"
         }
     
@@ -118,7 +118,7 @@ class ViewController: NSViewController {
             log.debug("we got my notification:\(notification.debugDescription!)")
         }
         
-        let signalA = self.rac_signalForSelector("viewWillAppear")
+        let signalA = self.rac_signalForSelector(#selector(NSViewController.viewWillAppear))
         signalA.subscribeNext { [unowned self]AnyObjectA in
             log.info("your view will Appear:\(self.view.window!.title)")
             self.createSignal()
@@ -138,10 +138,10 @@ class ViewController: NSViewController {
 //            NSTimer.schedule(repeatInterval: 1.0) { timer in
 //                sink.sendNext("tick #\(count++)")
 //            }
-            timer(1, onScheduler: QueueScheduler.mainQueueScheduler)
-                .startWithNext{ next in
-                    observer.sendNext("tick #\(count++)")
-            }
+//            timer(1, onScheduler: QueueScheduler.mainQueueScheduler)
+//                .startWithNext{ next in
+//                    observer.sendNext("tick #\(count++)")
+//            }
             return nil
         }
     }
