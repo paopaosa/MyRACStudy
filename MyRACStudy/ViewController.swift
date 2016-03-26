@@ -22,7 +22,14 @@ class LoginViewModel {
     
     private var startAction: Action<String, Void, NoError> = {
         return Action { _ in
-            log.debug("clicked")
+            log.debug("info clicked")
+            return SignalProducer<Void, NoError>.empty
+        }
+    }()
+    
+    var forgetCocoaAtion:Action<String, Void, NoError> = {
+        return Action { _ in
+            log.debug("forget clicked")
             return SignalProducer<Void, NoError>.empty
         }
     }()
@@ -30,7 +37,7 @@ class LoginViewModel {
     private var infoCocoaAction:CocoaAction?
     
     init () {
-        self.infoCocoaAction = CocoaAction(self.startAction, input:"")
+        self.infoCocoaAction = CocoaAction(startAction, input:"asdf")
     }
     
     func bindToInfoButton(btn: NSButton!) {
@@ -43,6 +50,7 @@ class ViewController: NSViewController {
     @IBOutlet weak var username: NSTextField!
     @IBOutlet weak var password: NSSecureTextField!
     @IBOutlet weak var infoBtn: NSButton!
+    @IBOutlet weak var forgetBtn: NSButton!
     
     let viewModel = LoginViewModel()
 
@@ -52,6 +60,11 @@ class ViewController: NSViewController {
         // Do any additional setup after loading the view.
 
         self.viewModel.bindToInfoButton(self.infoBtn)
+        
+        self.forgetBtn.rac_command = RACCommand(signalBlock: { (any) -> RACSignal! in
+            print("click forget")
+            return RACSignal.empty()
+        })
         
 //        self.username.rac_textSignal().subscribeNext { text in
 //            self.view.window?.title = "当前登录用户:" + (text as! String)
@@ -126,7 +139,7 @@ class ViewController: NSViewController {
         
         self.createSignal().observeNext { (next) -> () in
             log.debug(closure: { () -> String? in
-                return "hello"
+                return "hello\(next)"
             })
         }
     }
@@ -138,10 +151,11 @@ class ViewController: NSViewController {
 //            NSTimer.schedule(repeatInterval: 1.0) { timer in
 //                sink.sendNext("tick #\(count++)")
 //            }
-//            timer(1, onScheduler: QueueScheduler.mainQueueScheduler)
-//                .startWithNext{ next in
-//                    observer.sendNext("tick #\(count++)")
-//            }
+            timer(1, onScheduler: QueueScheduler.mainQueueScheduler)
+                .startWithNext{ next in
+                    count += 1
+                    observer.sendNext("tick #\(count)")
+            }
             return nil
         }
     }

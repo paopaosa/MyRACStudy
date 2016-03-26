@@ -740,7 +740,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="infoBtn" destination="d1k-tO-siH" id="Zhb-Gn-0ne"/>
+                        <outlet property="forgetBtn" destination="gag-YC-4en" id="o0A-5p-ujq"/>
+                        <outlet property="infoBtn" destination="d1k-tO-siH" id="YhJ-hP-aej"/>
                         <outlet property="password" destination="4ZK-wR-2uw" id="xco-ub-8zz"/>
                         <outlet property="username" destination="tVB-k1-C8a" id="bMU-oJ-xQI"/>
                     </connections>
