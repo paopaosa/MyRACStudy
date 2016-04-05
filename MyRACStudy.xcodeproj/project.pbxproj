@@ -25,6 +25,9 @@
 		CEFA54941C644ED800B8FDB6 /* MyCommonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFA54931C644ED800B8FDB6 /* MyCommonExtension.swift */; };
 		CEFA54991C6462CE00B8FDB6 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFA54981C6462CE00B8FDB6 /* BaseViewModel.swift */; };
 		CEFA549B1C64633900B8FDB6 /* MRUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFA549A1C64633900B8FDB6 /* MRUserViewModel.swift */; };
+		F57056281CA7EEF1003948E3 /* XCGLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFA54851C63930600B8FDB6 /* XCGLogger.framework */; };
+		F57056291CA7EEF1003948E3 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFA547E1C63676500B8FDB6 /* ReactiveCocoa.framework */; };
+		F570562A1CA7EEF1003948E3 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFA547F1C63676500B8FDB6 /* Result.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +115,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F57056281CA7EEF1003948E3 /* XCGLogger.framework in Frameworks */,
+				F57056291CA7EEF1003948E3 /* ReactiveCocoa.framework in Frameworks */,
+				F570562A1CA7EEF1003948E3 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +517,10 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = MyRACStudyTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.candzen.MyRACStudyTests;
@@ -524,6 +534,10 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = MyRACStudyTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.candzen.MyRACStudyTests;

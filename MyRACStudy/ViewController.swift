@@ -16,7 +16,7 @@ class LoginViewModel {
             log.debug("click info button")
             observer.sendNext("ok")
             observer.sendCompleted()
-            return nil
+            return RACDisposable(block:{ print("click info button over.")})
         })
         }.toAction()
     
