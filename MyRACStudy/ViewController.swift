@@ -113,9 +113,10 @@ class ViewController: NSViewController {
         nameSignalProducer.start { event in
             switch event {
             case let .Next(value):
-                if let text = value {
-                    log.debug("Next event: \(text)")
-                }
+//                if let text = value {
+//                    log.debug("Next event: \(text)")
+//                }
+                log.debug("Next event: \(value)")
             case let .Failed(error):
                 log.debug("Failed event: \(error)")
                 
@@ -139,7 +140,7 @@ class ViewController: NSViewController {
         
         self.createSignal().observeNext { (next) -> () in
             log.debug(closure: { () -> String? in
-                return "hello\(next)"
+                return "hello \(next)"
             })
         }
     }
