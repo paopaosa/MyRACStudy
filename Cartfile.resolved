@@ -1,3 +1,5 @@
-github "antitypical/Result" "2.0.0"
-github "DaveWoodCom/XCGLogger" "Version_3.3"
-github "ReactiveCocoa/ReactiveCocoa" "v4.1.0"
+github "ReactiveCocoa/ReactiveCocoa" "v2.5"
+github "ReactiveCocoa/ReactiveObjC" "1.0.1"
+github "antitypical/Result" "3.0.0"
+github "ReactiveCocoa/ReactiveSwift" "1.0.0-alpha.2"
+github "ReactiveCocoa/ReactiveObjCBridge" "ef8b8d1dd0b27d37e4d03232a68a1f144787e725"

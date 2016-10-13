@@ -1,2 +1,4 @@
-github "ReactiveCocoa/ReactiveCocoa" ~> 4.0
-github "DaveWoodCom/XCGLogger" ~> 3.2
+github "ReactiveCocoa/ReactiveSwift"
+github "ReactiveCocoa/ReactiveCocoa"
+github "ReactiveCocoa/ReactiveObjCBridge" "master"
+#github "DaveWoodCom/XCGLogger"

@@ -104,7 +104,7 @@ extension NSColor {
     }
     
     class func gnppBtn() -> NSColor! {
-        return NSColor(netHex: 0x1C7DDE).colorWithAlphaComponent(0.7)
+        return NSColor(netHex: 0x1C7DDE).withAlphaComponent(0.7)
     }
     
     class func textBrown() -> NSColor! {

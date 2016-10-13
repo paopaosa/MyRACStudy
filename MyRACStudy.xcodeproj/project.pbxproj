@@ -13,19 +13,21 @@
 		CEB8F13C1C63623D001FBC28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB8F13A1C63623D001FBC28 /* Main.storyboard */; };
 		CEB8F1471C63623E001FBC28 /* MyRACStudyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB8F1461C63623E001FBC28 /* MyRACStudyTests.swift */; };
 		CEB8F1521C63623E001FBC28 /* MyRACStudyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB8F1511C63623E001FBC28 /* MyRACStudyUITests.swift */; };
-		CEFA547B1C63663500B8FDB6 /* ReactiveCocoa.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = CEFA54791C63663500B8FDB6 /* ReactiveCocoa.framework.dSYM */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		CEFA547C1C63663500B8FDB6 /* Result.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = CEFA547A1C63663500B8FDB6 /* Result.framework.dSYM */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		CEFA547B1C63663500B8FDB6 /* ReactiveCocoa.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = CEFA54791C63663500B8FDB6 /* ReactiveCocoa.framework.dSYM */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		CEFA547C1C63663500B8FDB6 /* Result.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = CEFA547A1C63663500B8FDB6 /* Result.framework.dSYM */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		CEFA54801C63676500B8FDB6 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFA547E1C63676500B8FDB6 /* ReactiveCocoa.framework */; };
 		CEFA54811C63676500B8FDB6 /* ReactiveCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CEFA547E1C63676500B8FDB6 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CEFA54821C63676500B8FDB6 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFA547F1C63676500B8FDB6 /* Result.framework */; };
 		CEFA54831C63676500B8FDB6 /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CEFA547F1C63676500B8FDB6 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CEFA54861C63930600B8FDB6 /* XCGLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFA54851C63930600B8FDB6 /* XCGLogger.framework */; };
-		CEFA54871C63930600B8FDB6 /* XCGLogger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CEFA54851C63930600B8FDB6 /* XCGLogger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CEFA54891C63932100B8FDB6 /* XCGLogger.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = CEFA54881C63932100B8FDB6 /* XCGLogger.framework.dSYM */; };
 		CEFA54941C644ED800B8FDB6 /* MyCommonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFA54931C644ED800B8FDB6 /* MyCommonExtension.swift */; };
 		CEFA54991C6462CE00B8FDB6 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFA54981C6462CE00B8FDB6 /* BaseViewModel.swift */; };
 		CEFA549B1C64633900B8FDB6 /* MRUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFA549A1C64633900B8FDB6 /* MRUserViewModel.swift */; };
-		F57056281CA7EEF1003948E3 /* XCGLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFA54851C63930600B8FDB6 /* XCGLogger.framework */; };
+		F51836381DAE790B00F3A545 /* ReactiveSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F51836371DAE790B00F3A545 /* ReactiveSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F51836391DAE793400F3A545 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F51836371DAE790B00F3A545 /* ReactiveSwift.framework */; };
+		F52249911DAF77BE00CBD5B1 /* ReactiveSwift.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = F52249901DAF77BE00CBD5B1 /* ReactiveSwift.framework.dSYM */; };
+		F52249921DAF77BE00CBD5B1 /* ReactiveSwift.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = F52249901DAF77BE00CBD5B1 /* ReactiveSwift.framework.dSYM */; };
+		F52249931DAF77BE00CBD5B1 /* ReactiveSwift.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = F52249901DAF77BE00CBD5B1 /* ReactiveSwift.framework.dSYM */; };
+		F522499F1DAF7EC500CBD5B1 /* ReactiveSwift.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = F522499E1DAF7EC500CBD5B1 /* ReactiveSwift.framework.dSYM */; };
 		F57056291CA7EEF1003948E3 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFA547E1C63676500B8FDB6 /* ReactiveCocoa.framework */; };
 		F570562A1CA7EEF1003948E3 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFA547F1C63676500B8FDB6 /* Result.framework */; };
 /* End PBXBuildFile section */
@@ -54,9 +56,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 16;
 			files = (
-				CEFA547B1C63663500B8FDB6 /* ReactiveCocoa.framework.dSYM in CopyFiles */,
-				CEFA547C1C63663500B8FDB6 /* Result.framework.dSYM in CopyFiles */,
-				CEFA54891C63932100B8FDB6 /* XCGLogger.framework.dSYM in CopyFiles */,
+				F522499F1DAF7EC500CBD5B1 /* ReactiveSwift.framework.dSYM in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
@@ -68,7 +68,7 @@
 			files = (
 				CEFA54811C63676500B8FDB6 /* ReactiveCocoa.framework in Embed Frameworks */,
 				CEFA54831C63676500B8FDB6 /* Result.framework in Embed Frameworks */,
-				CEFA54871C63930600B8FDB6 /* XCGLogger.framework in Embed Frameworks */,
+				F51836381DAE790B00F3A545 /* ReactiveSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -92,12 +92,13 @@
 		CEFA547A1C63663500B8FDB6 /* Result.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Result.framework.dSYM; path = Carthage/Build/Mac/Result.framework.dSYM; sourceTree = "<group>"; };
 		CEFA547E1C63676500B8FDB6 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/Mac/ReactiveCocoa.framework; sourceTree = "<group>"; };
 		CEFA547F1C63676500B8FDB6 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/Mac/Result.framework; sourceTree = "<group>"; };
-		CEFA54851C63930600B8FDB6 /* XCGLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCGLogger.framework; path = Carthage/Build/Mac/XCGLogger.framework; sourceTree = "<group>"; };
-		CEFA54881C63932100B8FDB6 /* XCGLogger.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = XCGLogger.framework.dSYM; path = Carthage/Build/Mac/XCGLogger.framework.dSYM; sourceTree = "<group>"; };
 		CEFA54931C644ED800B8FDB6 /* MyCommonExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCommonExtension.swift; sourceTree = "<group>"; };
 		CEFA54951C6460E100B8FDB6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CEFA54981C6462CE00B8FDB6 /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		CEFA549A1C64633900B8FDB6 /* MRUserViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MRUserViewModel.swift; sourceTree = "<group>"; };
+		F51836371DAE790B00F3A545 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/Mac/ReactiveSwift.framework; sourceTree = "<group>"; };
+		F52249901DAF77BE00CBD5B1 /* ReactiveSwift.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = ReactiveSwift.framework.dSYM; path = Carthage/Build/Mac/ReactiveSwift.framework.dSYM; sourceTree = "<group>"; };
+		F522499E1DAF7EC500CBD5B1 /* ReactiveSwift.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = ReactiveSwift.framework.dSYM; path = Carthage/Build/Mac/ReactiveSwift.framework.dSYM; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +108,7 @@
 			files = (
 				CEFA54801C63676500B8FDB6 /* ReactiveCocoa.framework in Frameworks */,
 				CEFA54821C63676500B8FDB6 /* Result.framework in Frameworks */,
-				CEFA54861C63930600B8FDB6 /* XCGLogger.framework in Frameworks */,
+				F51836391DAE793400F3A545 /* ReactiveSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,7 +116,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F57056281CA7EEF1003948E3 /* XCGLogger.framework in Frameworks */,
 				F57056291CA7EEF1003948E3 /* ReactiveCocoa.framework in Frameworks */,
 				F570562A1CA7EEF1003948E3 /* Result.framework in Frameworks */,
 			);
@@ -188,12 +188,13 @@
 		CEFA547D1C63664300B8FDB6 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
-				CEFA54851C63930600B8FDB6 /* XCGLogger.framework */,
+				F51836371DAE790B00F3A545 /* ReactiveSwift.framework */,
 				CEFA547E1C63676500B8FDB6 /* ReactiveCocoa.framework */,
 				CEFA547F1C63676500B8FDB6 /* Result.framework */,
 				CEFA54791C63663500B8FDB6 /* ReactiveCocoa.framework.dSYM */,
+				F522499E1DAF7EC500CBD5B1 /* ReactiveSwift.framework.dSYM */,
+				F52249901DAF77BE00CBD5B1 /* ReactiveSwift.framework.dSYM */,
 				CEFA547A1C63663500B8FDB6 /* Result.framework.dSYM */,
-				CEFA54881C63932100B8FDB6 /* XCGLogger.framework.dSYM */,
 			);
 			name = Framework;
 			sourceTree = "<group>";
@@ -280,18 +281,21 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = PPS;
 				TargetAttributes = {
 					CEB8F1301C63623D001FBC28 = {
 						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 0800;
 					};
 					CEB8F1411C63623E001FBC28 = {
 						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = CEB8F1301C63623D001FBC28;
 					};
 					CEB8F14C1C63623E001FBC28 = {
 						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = CEB8F1301C63623D001FBC28;
 					};
 				};
@@ -323,6 +327,9 @@
 			files = (
 				CEB8F1391C63623D001FBC28 /* Assets.xcassets in Resources */,
 				CEB8F13C1C63623D001FBC28 /* Main.storyboard in Resources */,
+				CEFA547C1C63663500B8FDB6 /* Result.framework.dSYM in Resources */,
+				CEFA547B1C63663500B8FDB6 /* ReactiveCocoa.framework.dSYM in Resources */,
+				F52249911DAF77BE00CBD5B1 /* ReactiveSwift.framework.dSYM in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +337,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F52249921DAF77BE00CBD5B1 /* ReactiveSwift.framework.dSYM in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +345,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F52249931DAF77BE00CBD5B1 /* ReactiveSwift.framework.dSYM in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,8 +420,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -455,8 +466,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -475,6 +488,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
@@ -492,6 +506,7 @@
 				OTHER_SWIFT_FLAGS = "-DDEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.candzen.MyRACStudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -509,6 +524,7 @@
 				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.candzen.MyRACStudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -525,6 +541,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.candzen.MyRACStudyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyRACStudy.app/Contents/MacOS/MyRACStudy";
 			};
 			name = Debug;
@@ -542,6 +559,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.candzen.MyRACStudyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyRACStudy.app/Contents/MacOS/MyRACStudy";
 			};
 			name = Release;
@@ -554,6 +572,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.candzen.MyRACStudyUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = MyRACStudy;
 				USES_XCTRUNNER = YES;
 			};
@@ -567,6 +586,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.candzen.MyRACStudyUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = MyRACStudy;
 				USES_XCTRUNNER = YES;
 			};
