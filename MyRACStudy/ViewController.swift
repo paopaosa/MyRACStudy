@@ -8,45 +8,45 @@
 
 import Cocoa
 import Result
-import ReactiveSwift
 import ReactiveCocoa
-//import ReactiveObjCBridge
-//import ReactiveObjC
+import ReactiveSwift
+import ReactiveObjCBridge
+import ReactiveObjC
 
 class LoginViewModel {
-//    let infoAction = RACCommand { (object) -> RACSignal! in
-//        return RACSignal.createSignal({ (observer) -> RACDisposable! in
-//            NSLog("click info button")
+//    let infoAction = RACCommand { (object) -> RACSignal in
+//        return RACSignal.createSignal({ (observer) -> RACDisposable? in
+//            debugPrint("click info button")
 //            observer.sendNext("ok")
 //            observer.sendCompleted()
 //            return RACDisposable(block:{ print("click info button over.")})
 //        })
-//        }.bridgedAction(from:);
+//    }
     
     private var startAction: Action<String, Void, NoError> = {
         return Action { _ in
-            NSLog("info clicked")
+            debugPrint("info clicked")
             return SignalProducer<Void, NoError>.empty
         }
     }()
     
     var forgetCocoaAtion:Action<String, Void, NoError> = {
         return Action { _ in
-            NSLog("forget clicked")
+            debugPrint("forget clicked")
             return SignalProducer<Void, NoError>.empty
         }
     }()
     
-//    private var infoCocoaAction:CocoaAction?
-//    
-//    init () {
-//        self.infoCocoaAction = CocoaAction(startAction, input:"asdf")
-//    }
-//    
-//    func bindToInfoButton(_ btn: NSButton!) {
-//        btn.target = self.infoCocoaAction
-//        btn.action = CocoaAction.selector
-//    }
+    private var infoCocoaAction:CocoaAction?
+
+    init () {
+        self.infoCocoaAction = CocoaAction(startAction, input:"asdf")
+    }
+    
+    func bindToInfoButton(_ btn: NSButton!) {
+        btn.target = self.infoCocoaAction
+        btn.action = CocoaAction.selector
+    }
 }
 
 
@@ -63,20 +63,50 @@ class ViewController: NSViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+//        let label = NSButton()
+//        let property = MutableProperty<String>("")
+//        
+//        DynamicProperty(object: label, keyPath: "text") <~ property.producer.map { $0 }
+//        let t = self.username.rac_textSignal().toSignalProducer().map { $0 }
+//        if let window = self.view.window? {
+//            let windowTitlePropo = DynamicProperty(object: window, keyPath: "title")
+//        }
 
-//        self.viewModel.bindToInfoButton(self.infoBtn)
+        self.viewModel.bindToInfoButton(self.infoBtn)
         
-        self.forgetBtn.rac_command = RACCommand(signal: { (any) -> RACSignal! in
+//        self.forgetBtn.rac_command = RACCommand(signal: { (any) -> RACSignal! in
+//            debugPrint("click forget")
+//            return RACSignal.empty()
+//        })
+        self.forgetBtn.rac_command = RACCommand(signal: { (any) -> RACSignal in
             debugPrint("click forget")
             return RACSignal.empty()
         })
         
+        
 //        self.username.rac_textSignal().subscribeNext { text in
 //            self.view.window?.title = "当前登录用户:" + (text as! String)
-//            NSLog("you have input:\(text)")
-//            userViewModel.tempUsername = text as? String
+//            debugPrint("[username]:\(text!)")
+////            userViewModel.tempUsername = text as? String
 //        }
         
+        let searchStrings = self.username.rac_textSignal()
+            .toSignalProducer()
+            .map { text in text as! String }
+            .observe(on: UIScheduler())
+
+        searchStrings.startWithResult { [unowned self] result in
+            if let value = result.value {
+                debugPrint("[name]:\(value)")
+//                self.view.window?.title = value.length > 0 ? "input value is " + value : "登录";
+            }
+        }
+        
+//        self.username.rac_textSignal().subscribeNext({ text in
+//            debugPrint("you have input:\(text)")
+//        })
+        
+//        let inputSignal = self.username.rac_textSignal()
 //        var nameSignal:RACSignal
 //        userViewModel.tempUsername <~ nameSignal
 //        self.rac_signalForSelector(#selector(NSViewController.viewWillAppear)).subscribeNext {[weak self](object) -> Void in
@@ -86,40 +116,44 @@ class ViewController: NSViewController {
         .subscribeNext { [weak self](object) in
             self!.view.window?.title = "登录"
         }
-    
-//        let titleSignal:Signal = DynamicProperty(object: self.view, keyPath: "window.title").signal
-//        titleSignal.observeNext{ text in
-//            debugPrint("your window title to \(text!)")
-//        }
-//        titleSignal.observeFailed { error in
-//            debugPrint("Failed: \(error)")
-//        }
-//        titleSignal.observeCompleted {
-//            debugPrint("Completed")
-//        }
-//        titleSignal.observeInterrupted {
-//            debugPrint("Interrupted")
-//        }
+
+        let titleSignal:Signal<AnyObject?,NoError> = DynamicProperty(object: self.view, keyPath: "window.title").signal
+        titleSignal.observeValues{ text in
+            debugPrint("your window title is:\(text!)")
+        }
+        titleSignal.observeFailed { error in
+            debugPrint("Failed: \(error)")
+        }
+        titleSignal.observeCompleted {
+            debugPrint("Completed")
+        }
+        titleSignal.observeInterrupted {
+            debugPrint("Interrupted")
+        }
 
 //        DynamicProperty(object: self, keyPath: "title").signal
 //            .observeNext{ object in
 //                NSLog("what is nsviewcontroller title:\(object)")
 //            }
-        
+
+        (DynamicProperty(object: self, keyPath: "title").signal as Signal<AnyObject?, NoError>).observeValues { value in
+            if let _title = value as? String {
+                debugPrint("what is ns viewcontorller title:\(_title)")
+            }
+        }
         self.title = "1"
         self.title = "2"
 
-//        let (waitSignal,observer) = Signal<Int, NoError>.pipe()
-//        waitSignal.observeNext { (next) -> () in
-//            NSLog("wait signal send next: \(next)")
-//        }
-        let (waitSignal, observer) = Signal<Int, NoError>.pipe()
-        waitSignal.observe(Observer<Int, NoError>{ NSLog("asdfasdf")})
-        
-//        observer.sendNext(1)
-//        observer.sendNext(0)
-        observer.send(value: 1)
-        observer.send(value: 0)
+        // create signal and observer
+        let (waitSignal,observer) = Signal<String, NoError>.pipe()
+        waitSignal.observeValues { (next) in
+            debugPrint("wait signal send next: \(next)")
+        }
+        observer.send(value: "one")
+        observer.send(value: "zero")
+
+        // create signal
+
         
         
 //        let nameSignalProducer = self.username.rac_textSignal().toSignalProducer()
