@@ -98,7 +98,8 @@ class ViewController: NSViewController {
         searchStrings.startWithResult { [unowned self] result in
             if let value = result.value {
                 debugPrint("[name]:\(value)")
-//                self.view.window?.title = value.length > 0 ? "input value is " + value : "登录";
+                self.view.window?.title = value.utf8.count > 0 ? "登录名:" + value : "登录"
+                self.title = value
             }
         }
         
