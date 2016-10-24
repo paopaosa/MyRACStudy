@@ -14,14 +14,14 @@ import ReactiveObjCBridge
 import ReactiveObjC
 
 class LoginViewModel {
-    let infoAction = RACCommand { (object) -> RACSignal in
-        return RACSignal.createSignal({ (observer) -> RACDisposable? in
-            debugPrint("click info button")
-            observer.sendNext("ok")
-            observer.sendCompleted()
-            return RACDisposable(block:{ print("click info button over.")})
-        })
-    }
+//    let infoAction = RACCommand { (object) -> RACSignal in
+//        return RACSignal.createSignal({ (observer) -> RACDisposable? in
+//            debugPrint("click info button")
+//            observer.sendNext("ok")
+//            observer.sendCompleted()
+//            return RACDisposable(block:{ print("click info button over.")})
+//        })
+//    }
     
     private var startAction: Action<String, Void, NoError> = {
         return Action { i in
