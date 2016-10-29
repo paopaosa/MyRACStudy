@@ -37,7 +37,7 @@ class LoginViewModel {
         }
     }()
     
-    private var infoCocoaAction:CocoaAction?
+    private var infoCocoaAction:CocoaAction<Any>?
 
     init () {
         self.infoCocoaAction = CocoaAction(startAction, input:"asdf")
@@ -45,7 +45,7 @@ class LoginViewModel {
     
     func bindToInfoButton(_ btn: NSButton!) {
         btn.target = self.infoCocoaAction
-        btn.action = CocoaAction.selector
+        btn.action = CocoaAction<Any>.selector
     }
 }
 
