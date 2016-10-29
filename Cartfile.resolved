@@ -1,5 +1,5 @@
 github "ReactiveCocoa/ReactiveObjC" "d75f1e020e73e895999e70dcdd0d62eccfcc6983"
 github "antitypical/Result" "3.0.0"
-github "ReactiveCocoa/ReactiveSwift" "1.0.0-alpha.2"
-github "ReactiveCocoa/ReactiveCocoa" "4296d939cb5e991871b985e4bd85910d58feadce"
-github "ReactiveCocoa/ReactiveObjCBridge" "ef8b8d1dd0b27d37e4d03232a68a1f144787e725"
+github "ReactiveCocoa/ReactiveSwift" "1.0.0-alpha.3"
+github "ReactiveCocoa/ReactiveCocoa" "3b3b711ce24d63e791bb124ca5df1021959f176c"
+github "ReactiveCocoa/ReactiveObjCBridge" "aa9fb48e446f870723ffd3c64a49a9291ea99207"

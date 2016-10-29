@@ -1,5 +1,5 @@
-github "ReactiveCocoa/ReactiveSwift" "master"
+github "ReactiveCocoa/ReactiveSwift" "1.0.0-alpha.3"
 github "ReactiveCocoa/ReactiveCocoa" "master"
 github "ReactiveCocoa/ReactiveObjC" "master"
 github "ReactiveCocoa/ReactiveObjCBridge" "master"
-#github "DaveWoodCom/XCGLogger"c
+#github "DaveWoodCom/XCGLogger"
