@@ -14,19 +14,19 @@
 		CEB8F1471C63623E001FBC28 /* MyRACStudyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB8F1461C63623E001FBC28 /* MyRACStudyTests.swift */; };
 		CEB8F1521C63623E001FBC28 /* MyRACStudyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB8F1511C63623E001FBC28 /* MyRACStudyUITests.swift */; };
 		CEFA54811C63676500B8FDB6 /* ReactiveCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CEFA547E1C63676500B8FDB6 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CEFA54821C63676500B8FDB6 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFA547F1C63676500B8FDB6 /* Result.framework */; };
 		CEFA54831C63676500B8FDB6 /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CEFA547F1C63676500B8FDB6 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CEFA54941C644ED800B8FDB6 /* MyCommonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFA54931C644ED800B8FDB6 /* MyCommonExtension.swift */; };
 		CEFA54991C6462CE00B8FDB6 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFA54981C6462CE00B8FDB6 /* BaseViewModel.swift */; };
 		CEFA549B1C64633900B8FDB6 /* MRUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFA549A1C64633900B8FDB6 /* MRUserViewModel.swift */; };
 		F51836381DAE790B00F3A545 /* ReactiveSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F51836371DAE790B00F3A545 /* ReactiveSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F55189E61DB0C5320013108C /* ReactiveObjCBridge.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F55189E51DB0C5320013108C /* ReactiveObjCBridge.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F55189E91DB0C6DC0013108C /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFA547E1C63676500B8FDB6 /* ReactiveCocoa.framework */; };
-		F55189EA1DB0C6E00013108C /* ReactiveObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5EE6B211DAFDC0400BCD33B /* ReactiveObjC.framework */; };
-		F55189EB1DB0C6E50013108C /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F51836371DAE790B00F3A545 /* ReactiveSwift.framework */; };
-		F55189ED1DB0C7DE0013108C /* ReactiveObjCBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F55189E51DB0C5320013108C /* ReactiveObjCBridge.framework */; };
 		F57056291CA7EEF1003948E3 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFA547E1C63676500B8FDB6 /* ReactiveCocoa.framework */; };
 		F570562A1CA7EEF1003948E3 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFA547F1C63676500B8FDB6 /* Result.framework */; };
+		F5A64AB41DC6E100005D1EDE /* ReactiveCocoa.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5A64AAF1DC6E100005D1EDE /* ReactiveCocoa.framework.dSYM */; };
+		F5A64AB51DC6E100005D1EDE /* ReactiveObjC.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5A64AB01DC6E100005D1EDE /* ReactiveObjC.framework.dSYM */; };
+		F5A64AB61DC6E100005D1EDE /* ReactiveObjCBridge.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5A64AB11DC6E100005D1EDE /* ReactiveObjCBridge.framework.dSYM */; };
+		F5A64AB71DC6E100005D1EDE /* ReactiveSwift.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5A64AB21DC6E100005D1EDE /* ReactiveSwift.framework.dSYM */; };
+		F5A64AB81DC6E100005D1EDE /* Result.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5A64AB31DC6E100005D1EDE /* Result.framework.dSYM */; };
 		F5EE6B221DAFDC0400BCD33B /* ReactiveObjC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F5EE6B211DAFDC0400BCD33B /* ReactiveObjC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
@@ -54,6 +54,11 @@
 			dstPath = "";
 			dstSubfolderSpec = 16;
 			files = (
+				F5A64AB41DC6E100005D1EDE /* ReactiveCocoa.framework.dSYM in CopyFiles */,
+				F5A64AB51DC6E100005D1EDE /* ReactiveObjC.framework.dSYM in CopyFiles */,
+				F5A64AB61DC6E100005D1EDE /* ReactiveObjCBridge.framework.dSYM in CopyFiles */,
+				F5A64AB71DC6E100005D1EDE /* ReactiveSwift.framework.dSYM in CopyFiles */,
+				F5A64AB81DC6E100005D1EDE /* Result.framework.dSYM in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
@@ -95,6 +100,11 @@
 		CEFA549A1C64633900B8FDB6 /* MRUserViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MRUserViewModel.swift; sourceTree = "<group>"; };
 		F51836371DAE790B00F3A545 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/Mac/ReactiveSwift.framework; sourceTree = "<group>"; };
 		F55189E51DB0C5320013108C /* ReactiveObjCBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveObjCBridge.framework; path = Carthage/Build/Mac/ReactiveObjCBridge.framework; sourceTree = "<group>"; };
+		F5A64AAF1DC6E100005D1EDE /* ReactiveCocoa.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = ReactiveCocoa.framework.dSYM; path = Carthage/Build/Mac/ReactiveCocoa.framework.dSYM; sourceTree = "<group>"; };
+		F5A64AB01DC6E100005D1EDE /* ReactiveObjC.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = ReactiveObjC.framework.dSYM; path = Carthage/Build/Mac/ReactiveObjC.framework.dSYM; sourceTree = "<group>"; };
+		F5A64AB11DC6E100005D1EDE /* ReactiveObjCBridge.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = ReactiveObjCBridge.framework.dSYM; path = Carthage/Build/Mac/ReactiveObjCBridge.framework.dSYM; sourceTree = "<group>"; };
+		F5A64AB21DC6E100005D1EDE /* ReactiveSwift.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = ReactiveSwift.framework.dSYM; path = Carthage/Build/Mac/ReactiveSwift.framework.dSYM; sourceTree = "<group>"; };
+		F5A64AB31DC6E100005D1EDE /* Result.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Result.framework.dSYM; path = Carthage/Build/Mac/Result.framework.dSYM; sourceTree = "<group>"; };
 		F5C0503B1DAFCC1B00A18F96 /* ReactiveObjCBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveObjCBridge.framework; path = Carthage/Build/Mac/ReactiveObjCBridge.framework; sourceTree = "<group>"; };
 		F5EE6B211DAFDC0400BCD33B /* ReactiveObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveObjC.framework; path = Carthage/Build/Mac/ReactiveObjC.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,11 +114,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEFA54821C63676500B8FDB6 /* Result.framework in Frameworks */,
-				F55189E91DB0C6DC0013108C /* ReactiveCocoa.framework in Frameworks */,
-				F55189EA1DB0C6E00013108C /* ReactiveObjC.framework in Frameworks */,
-				F55189EB1DB0C6E50013108C /* ReactiveSwift.framework in Frameworks */,
-				F55189ED1DB0C7DE0013108C /* ReactiveObjCBridge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				CEFA54951C6460E100B8FDB6 /* README.md */,
+				F5A64AB91DC6E119005D1EDE /* dSYM */,
 				CEFA547D1C63664300B8FDB6 /* Framework */,
 				CEB8F1331C63623D001FBC28 /* MyRACStudy */,
 				CEB8F1451C63623E001FBC28 /* MyRACStudyTests */,
@@ -213,6 +219,18 @@
 				CEFA549A1C64633900B8FDB6 /* MRUserViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F5A64AB91DC6E119005D1EDE /* dSYM */ = {
+			isa = PBXGroup;
+			children = (
+				F5A64AAF1DC6E100005D1EDE /* ReactiveCocoa.framework.dSYM */,
+				F5A64AB01DC6E100005D1EDE /* ReactiveObjC.framework.dSYM */,
+				F5A64AB11DC6E100005D1EDE /* ReactiveObjCBridge.framework.dSYM */,
+				F5A64AB21DC6E100005D1EDE /* ReactiveSwift.framework.dSYM */,
+				F5A64AB31DC6E100005D1EDE /* Result.framework.dSYM */,
+			);
+			name = dSYM;
 			sourceTree = "<group>";
 		};
 		F5C0503A1DAFCC1B00A18F96 /* Frameworks */ = {
